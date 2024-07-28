@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div>
+      <a href="/" class="text-lg font-bold text-blue-600">Home</a>
+    </div>
+    <div class="flex items-center">
+      <img id="user_img" class="w-8 h-8 rounded-full mr-2" src="" alt="User Image" style="display: none;">
+      <a id="login_link" href="../auth/login/index.html" class="text-lg font-bold text-blue-600">Login</a>
+      <button id="logout_btn" class="ml-4 px-4 py-2 text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Logout</button>
+    </div>
+  </nav>
+  <div class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold mb-4">My Cart</h2>
+    <div id="cart-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
+
+
+
